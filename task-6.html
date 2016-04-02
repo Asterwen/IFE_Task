@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Newspaper</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0; 
+	}
+	.container{
+		width: 980px;
+		height: 1386px;
+		margin: 0 auto;
+	/*	background-color: #00FF00;*/
+	}
+	header{
+		height: 63px;
+		width: 892px;
+		margin: 0 auto;
+		/*background-color: #0000FF;*/
+	}
+	div.logo{
+		width: 110px;
+		height: 61px;
+		background-color: red;
+	}
+	.logo .log_word{		
+		font-size: 12px;
+		color: #ffffff;
+	}
+	.log_time{
+		font-size: 12px;
+		color: #d45d5c;
+		float: right;
+		margin-top:-16px; 
+	}
+	div.divice_line{
+		height: 890px;
+		height: 2px;
+		background-color: #938e8c;
+
+	}
+	.head_part{
+		width: 892px;
+		height: 301px;
+		margin: 0 auto;
+		margin-top:30px;
+		border: 1px solid #abcdef; 
+	}
+	div.head_part_left{
+		float: left;
+		width: 641px;
+		height: 301px;
+		/*background-image:url(); */
+	}
+	div.left_blur{
+		float: left;
+		width: 191px;
+		height: 301px;
+		opacity: 0.4;
+		background-color: #75b86b;
+	}
+	div.right_blur{
+		float: right;
+		width: 191px;
+		height:301px;
+		opacity: 0.4;
+		background-color: #d45d5c;
+	}
+	div.head_part_right{
+		width: 203px;
+		height: 301px;
+		float: right;		
+		background-color: #ccc;
+	}
+	div.red_line{
+		width: 203px;
+		height: 2px;
+		background-color: #cc8091;
+	}
+	div.word_part{
+		width: 892px;
+		height: 210px;
+		margin: 20px auto;
+
+	}
+	div.word_part article{
+		width: 200px;
+		/*height: 400px;*/
+		float: left;
+		margin-right:40px; 
+	}
+	article.f_word h2{
+		font-size: 16px;
+		color: #75b86b;
+		text-decoration: underline;
+	}
+	article.s_word h2{
+		font-size: 16px;
+		color: #d2994f;
+		text-decoration: underline;
+	}
+	article.t_word h2{
+		font-size: 16px;
+		color: #cc7680;
+		text-decoration: underline;
+	}
+	article p{
+		margin-top:5px; 
+	}
+	article.t_word .mor_p{
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	article.t_word .lit_p{
+		font: 12px;
+		font-family: "微软雅黑";
+		line-height: 16px;
+	}
+	article.t_word .lit_p span{
+		opacity: 0.7;
+		font-style: italic;
+		color:#cd4a48;
+
+	}
+	div.b_part{
+		width: 892px;
+		margin: 0 auto;
+	}
+	.m_title{
+		width: 415px;
+		font-size: 42px;
+		color: #11456b;
+		font-family: "黑体";
+		line-height: 40px;
+	}
+	.m_title span{
+		font-size: 72px;
+		font-style: italic;
+		font-weight: bold;
+		color: #f5e327;
+		
+	}
+	article.paper_word{
+		margin-top: 12px; 
+		width: 415px;
+		font-size: 14px;
+		font-family: "宋体";
+		color: #767777;
+		line-height: 16px;
+		/*display: inline;*/
+	}
+	article.paper_word span{
+		float: left;
+		line-height: 70px;
+		font-size: 70px;
+		color: #f5e327;
+		font-family: "微软雅黑";
+		padding: 0 15px 10px 0;
+	}
+	article.paper_word p{
+		text-indent: 2em;
+		font-size: 14px;
+		font-family: "宋体";
+		color: #767777;
+		line-height: 16px;
+	}
+	article.paper_word img{
+		/*position: absolute;*/
+		float: right;
+		margin-top:20px; 
+		margin-left: 10px;
+		display: inline;
+	}
+	.bu_last{
+		float: right;
+		margin-top: -640px;
+	}
+	.bu_last .font_page{
+		position: relative;
+		width: 458px;
+		height: 258px;
+		background-image: url("img/3.jpg");
+	}
+	.init{
+		position: relative;
+		width: 458px;
+		height: 61px;
+		line-height: 61px;
+		background-color: #5D5D5D;
+		opacity: 0.7;
+		/*margin-top:199px; */		
+	}
+	.init div{
+		margin-left: 40px;
+		/*margin-top:5px; */
+		height: 44px;
+		border-left: 3px solid #72b16a;
+		font-size: 26px;
+		color: #ffffff;
+		font-family: "微软雅黑";
+	}
+	.init div span{
+		font-size: 12px;
+		color: #72b16a;
+		font-style: italic;
+		word-spacing: 140%;
+	}
+	.last{
+		width: 458px;
+		background-color: #EEEED6;
+	}
+	.last ul{
+		padding: 35px 20px 30px 20px;
+		margin: 35px 0 0 20px;
+	}
+	.last ul li{
+		font-size: 16px;
+		font-family: "宋体";
+		line-height: 30px;
+		list-style-type: none;
+		list-style-image: url(img/icon-1.png);
+	}
+	.last p{
+		display: inline;
+	}
+	.zero{
+		width: 260px;
+		height: 150px;
+		display: inline;
+		float: left;
+	}
+	/*.qian{
+		display: inline;
+		width: 20px;
+		height: 22px;
+		background-image: url(img/icon-2.png);
+	}*/
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="logo"><br><br>
+				<span class="log_word">&nbsp ife.baidu.com</span>
+			</div>
+			<span class="log_time">2016.03</span>
+			<div class="divice_line"></div>
+		</header>
+	<div class="head_part">
+		<div class="head_part_left">
+			<div class="left_blur"></div>
+			<div class="right_blur"></div>
+		</div>
+		<div class="head_part_right">
+			<div class="red_line"></div>
+		</div>
+	</div>
+	<div class="word_part">
+		<article class="f_word">
+			<h2>What</h2>
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		</article>
+		<article class="s_word">
+			<h2>When</h2>
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		</article>
+		<article class="t_word">
+			<h2>How</h2>
+			<p class="mor_p">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			<p class="lit_p">What------<span>40%</span></p>
+			<p class="lit_p">What------<span>30%</span></p>
+			<p class="lit_p">What------<span>30%</span></p>
+		</article>
+	</div>
+	<div class="b_part">
+	<p class="m_title"><span>THE</span>&nbspTECHNOLOGE &nbsp OF&nbspFRONT <br><span style="font-size:33px;color:#11456b;font-style:黑体;font-weight:bold;"> 前端技术领域</span></p>
+	<div style="width:415px;height:2px;background-color:#11456b;margin-top:3px;"></div>
+	<article class="paper_word">
+		<span>前</span>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+		<img src="img/2.jpg" alt="">
+		<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+		
+	</article>
+	<section class="bu_last">
+		<div class="font_page">
+			<div style="width:458px;height:199px;"></div>
+			<div class="init">				
+				<div>
+					&nbsp 前端技术<span> &nbsp 前端技术前端技术</span>
+				</div>
+			</div>
+		</div>
+		<!-- <img src="img/3.jpg" alt=""> -->
+		<div class="last">
+			<ul>
+				<li>前端技术前端技术前端技术前端技术</li>
+				<li>前端技术前端技术前端技术前端技术</li>
+				<li>前端技术前端技术前端技术前端技术</li>
+			</ul>
+			<div class="zero"></div>
+			<p><img src="img/icon-2.png" alt=""><img src="img/icon-2.png" alt=""></p>
+			hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world
+			<p><img src="img/icon-3.png" alt=""><img src="img/icon-3.png" alt=""></p>
+		</div>
+	</section>
+
+
+	</div>
+	
+</div>
+</body>
+</html>

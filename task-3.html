@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0px;
+	}
+	.container{
+		width: 95%;
+		margin: 20px 2.5%;
+		background-color: #eee;
+		border: 1px solid #999;
+	}
+	div.team{
+		position: absolute;
+		width: 200px;
+		border: 1px solid #999;
+		background-color: white;
+		/*float: left;*/
+		margin: 20px 0 20px 20px;
+		display: inline;
+	}
+	div.team img{
+		float: left;
+		margin: 20px;
+		height: 80px;
+		border: 1px solid #999;
+	}
+	div.team span{
+		line-height: 50px;
+	}
+	.right{
+		width: 120px;
+		background-color: white;
+        border: 1px solid #999;
+        float: left;
+        margin-left: -140px;
+        min-height:50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+	}
+	.right img{
+		margin: 20px 19px;
+		height: 80px;
+		border: 1px solid #999;
+	}
+	.middle{
+		margin: 20px 2.5%;
+		float: left;
+		min-width: 50px;
+		width: 95%;
+		display:block;
+
+	}
+	.middle_word{
+		margin-left: 220px;
+		margin-right: 140px;
+		min-height: 50px;
+		background-color: white;
+		border: 1px solid #999;
+		padding: 20px;
+	}
+	.clearfix{
+		clear: both;
+	}
+	#baoli{
+		margin-top:80px; 
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="team">
+			<img src="img/dui.png" alt="">
+			<span>Asterwen</span>
+		</div>
+		<div class="middle">
+			<div class="middle_word">
+			 <h2>团队介绍</h2>
+          <p>来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端来，自不同的地方 有男有女 喜爱前端，
+               来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端。</p>
+          <p>来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端来，自不同的地方 有男有女 喜爱前端，
+               来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端。</p>
+          <p>来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端来，自不同的地方 有男有女 喜爱前端，
+               来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端。</p>
+          <p>来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端来，自不同的地方 有男有女 喜爱前端，
+               来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端。</p>
+          <p>来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端来，自不同的地方 有男有女 喜爱前端，
+               来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端，来自不同的地方 有男有女 喜爱前端。</p>
+			</div>
+		</div>
+
+		<div class="right">
+			<img src="img/yu.png" alt="">	
+			<img src="img/liu.png" alt="">		
+			<img src="img/chen.png" alt="">
+			<img src="img/meng.png" alt="">
+			<img src="img/kou.png" alt="">
+		</div>
+	
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>
